@@ -1,19 +1,44 @@
 aid: limbo
 name: Limbo
-description: Limbo is a company surfaced as a portfolio company of seedcamp and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Limbo is a direct-to-consumer digital weight-loss and metabolic-health program operated by
+  Vitals in View, Inc., with subsidiaries in the UK (company no. 15047668) and Ireland (company no. 725671).
+  Members wear a body-worn "energy sensor" that reads metabolic signals, and a companion app turns those
+  readings into personalized, nudge-based guidance intended to change eating habits without calorie counting.
+  The company is Seedcamp-backed, raised a seed round in September 2022, and is mid-rebrand from Limbo
+  (limborevolution.com) to Viv (viv.co), with the marketing site now served from content.viv.co. Limbo
+  publishes no public API, developer portal, SDK, or /.well-known/ discovery surface; this profile captures
+  its identity and probed security posture only.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://content.viv.co/hubfs/VIv%20green%20circle.png
 url: https://raw.githubusercontent.com/api-evangelist/limbo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - seedcamp
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profile
+x-tier-reason: enriched-no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Health
+- Digital Health
+- Metabolic Health
+- Weight Loss
+- Wearables
+- Consumer Health
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +47,29 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://limborevolution.com
+  url: https://limborevolution.com/
+- type: Blog
+  url: https://content.viv.co/blog
+- type: SignUp
+  url: https://content.viv.co/join-0
+- type: Login
+  url: https://vivpowered.chargebeeportal.com
+- type: Research
+  url: https://content.viv.co/research
+- type: LinkedIn
+  url: https://www.linkedin.com/company/limborevolution/
+- type: YouTube
+  url: https://www.youtube.com/channel/UCowc1zZMykJbkw7P8cATy8Q
+- type: Instagram
+  url: https://www.instagram.com/limborevolution/
+- type: Facebook
+  url: https://www.facebook.com/limborevolution/
+- type: DomainSecurity
+  url: security/limbo-domain-security.yml
+- type: LLMsTxt
+  url: llms/limbo-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
