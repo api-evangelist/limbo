@@ -1,0 +1,43 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of the Limbo / Viv public hosts
+note: >-
+  No /.well-known/ discovery documents are published on any Limbo host. Every
+  probed path returned 404 (or the host did not resolve). This is a recorded
+  negative result, not a gap in the probe. Limbo is a direct-to-consumer
+  metabolic-health product with no public API surface, so there is no OAuth,
+  OpenID Connect, or API-catalog discovery document to find.
+hosts:
+- host: https://limborevolution.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://content.viv.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://viv.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+    note: host did not resolve/connect

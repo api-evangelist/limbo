@@ -1,0 +1,45 @@
+# Limbo (Vitals in View, Inc.)
+
+> Limbo is a direct-to-consumer digital weight-loss and metabolic-health program
+> from Vitals in View, Inc. Members wear a body-worn "energy sensor" that reads
+> metabolic signals, and a companion app turns those readings into personalized,
+> nudge-based guidance rather than calorie counting. The company is Seedcamp-backed
+> and raised a seed round in September 2022. It operates in the UK and Ireland and
+> is in the middle of a rebrand from "Limbo" / limborevolution.com to "Viv"
+> (viv.co).
+
+## Important context for agents
+
+- Limbo publishes **no public API, developer portal, or SDK**. There is no
+  OpenAPI, AsyncAPI, GraphQL, or MCP surface to call, and no /.well-known/
+  discovery documents on any of its hosts.
+- Do not attribute the many unrelated software packages named "limbo" (for
+  example the Rust SQLite rewrite) to this company.
+- The primary web presence is a HubSpot-hosted marketing site. Membership
+  billing runs through Chargebee and the members area runs on Azure.
+- Several legal/support pages are linked from the site footer but currently
+  return 404 during the Viv rebrand — treat privacy, cookie, refunds, about,
+  contact, and knowledge-base URLs as unavailable rather than as published policy.
+
+## Site
+
+- [Home](https://limborevolution.com/): Product overview, redirects to content.viv.co
+- [Join](https://content.viv.co/join-0): Sign-up and purchase entry point
+- [Research](https://content.viv.co/research): The science behind the program
+- [Blog](https://content.viv.co/blog): Company and weight-loss content
+- [Weight Loss Guide](https://content.viv.co/summer-weight-loss): Long-form guide
+- [Member billing portal](https://vivpowered.chargebeeportal.com): Chargebee membership management
+
+## Specs
+
+None published. Limbo has no public API contract of any kind.
+
+## Artifacts in this profile
+
+- [Domain security](security/limbo-domain-security.yml): probed TLS/HSTS/DNS posture
+- [Well-known probe](well-known/limbo-well-known.yml): recorded 404s across discovery paths
+
+## Coverage
+
+- API Evangelist profile: https://apis.io/provider/limbo/
+- Source: https://raw.githubusercontent.com/api-evangelist/limbo/refs/heads/main/apis.yml
