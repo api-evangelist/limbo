@@ -8,6 +8,17 @@ description: Limbo is a direct-to-consumer digital weight-loss and metabolic-hea
   (limborevolution.com) to Viv (viv.co), with the marketing site now served from content.viv.co. Limbo
   publishes no public API, developer portal, SDK, or /.well-known/ discovery surface; this profile captures
   its identity and probed security posture only.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
